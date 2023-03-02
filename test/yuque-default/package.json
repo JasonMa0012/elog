@@ -2,7 +2,6 @@
   "name": "yuque-default",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "elog:init": "elog init",
     "elog:sync": "elog sync -e .env",

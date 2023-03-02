@@ -4,8 +4,20 @@
   "description": "elog的脚手架，主要用来生成配置文件并调用@elog/core的API",
   "homepage": "https://github.com/LetTTGACO/elog/tree/master/packages/elog-cli#readme",
   "author": "1874 <me@mail.1874.cool>",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.cjs.js",
+  "module": "dist/esm/index.mjs.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -25,14 +37,14 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "father build"
+    "build": "rollup -c"
   },
   "dependencies": {
     "@elog/core": "workspace:*",
     "@elog/shared": "workspace:*",
     "commander": "^9.4.1",
     "dotenv": "^16.0.3",
-    "inquirer": "^8.2.5",
+    "inquirer": "^9.1.4",
     "latest-version": "5.1.0",
     "rimraf": "^3.0.2",
     "semver": "^7.3.8"
