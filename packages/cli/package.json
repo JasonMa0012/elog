@@ -7,6 +7,7 @@
   "main": "dist/cjs/index.cjs.js",
   "module": "dist/esm/index.mjs.js",
   "types": "index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -37,7 +38,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup --config rollup.config.js --bundleConfigAsCjs"
   },
   "dependencies": {
     "@elog/core": "workspace:*",
