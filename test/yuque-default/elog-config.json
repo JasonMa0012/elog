@@ -1,0 +1,22 @@
+{
+  "writing": {
+    "platform": "yuque",
+    "login": "elog-yuque-demo",
+    "repo": "kt7zyw",
+    "onlyPublic": false,
+    "onlyPublished": false
+  },
+  "deploy": {
+    "platform": "default",
+    "classify": "classify",
+    "postPath": "./source/_posts/",
+    "mdNameFormat": "title",
+    "adapter": "matter-markdown"
+  },
+  "image": {
+    "enable": true,
+    "bed": "local",
+    "output": "./source/images/",
+    "prefixKey": "/images/"
+  }
+}

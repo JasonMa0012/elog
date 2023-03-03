@@ -3,8 +3,8 @@ import inquirer from 'inquirer'
 import { gt } from 'semver'
 import { out } from '@elog/shared'
 import { runCmdSync } from '../utils/run'
-import { getPkgJSON } from '../utils/utils'
-const { pkgJson } = getPkgJSON()
+// @ts-ignore
+import pkgJson from '../../package.json'
 
 const enum PackageManager {
   NPM = 'npm',

@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-import { run } from '../dist'
+const { run } = require('../dist/index.js')
 run().catch(() => {
   process.exit(1)
 })

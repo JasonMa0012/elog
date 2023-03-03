@@ -4,8 +4,7 @@ import sync from './scripts/sync'
 import clean from './scripts/clean'
 import { out } from '@elog/shared'
 import upgrade from './scripts/upgrade'
-import { getPkgJSON } from './utils/utils'
-const { pkgJson } = getPkgJSON()
+import pkgJson from '../package.json'
 
 export async function run() {
   program
